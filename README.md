@@ -1,4 +1,4 @@
-# PCA-EXP-6-MATRIX-TRANSPOSITION-USING-SHARED-MEMORY-AY-23-24
+# PCA-EXP-6-MATRIX-TRANSPOSITION-USING-SHARED-MEMORY-AY-25-26
 <h3>ENTER YOUR NAME : Easwari M</h3>
 <h3>ENTER YOUR REGISTER NO : 212223240033</h3>
 <h3>EX. NO : 6</h3>
@@ -409,6 +409,8 @@ CHECK(cudaMemset(d_C, 0, nBytes));
 ```
 !nvcc -arch=sm_75 mattranpose.cu -o mattran
 !nvprof ./mattran
+!nvprof --print-gpu-trace ./mattran
+
 ```
 
 ## OUTPUT:
